@@ -1,0 +1,21 @@
+export enum TaskCategory {
+    GeneralDiscussion = 'GeneralDiscussion',
+    FileRequestCloud = 'FileRequestCloud',
+    FilePreview = 'FilePreview',
+    Collaboration = 'Collaboration',
+    ModelCollaboration = 'ModelCollaboration',
+    CadCollaboration = 'CadCollaboration',
+    OfficeCollaboration = 'OfficeCollaboration',
+    ImageCollaboration = 'ImageCollaboration',
+    PointCloud = 'PointCloud',
+    //
+    RFIs = 'RFIs',
+    Clashing = 'Clashing',
+    TakeOff = 'TakeOff',
+    ScheduleReport = 'ScheduleReport',
+    MethodStatement = 'MethodStatement',
+    Sheets = 'Sheets',
+    Report360 = 'Report360',
+    CombineData = 'CombineData',
+    ProjectHistory = 'ProjectHistory',
+}

@@ -1,0 +1,115 @@
+.version-dialog {
+    &__title {
+        &-category {
+            display: inline;
+            margin-left: 8px;
+            font-size: $fs-5;
+
+        }
+
+        &-icon {
+            display: inline-block;
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background-color: $text-disable;
+            margin: 0 16px;
+            vertical-align: middle;
+        }
+
+        &-document {
+            display: inline;
+            font-size: $fs-3;
+            color: $text-disable;
+        }
+
+    }
+
+    &__content {
+
+        .item-card {
+            border-radius: 12px;
+
+            &__header {
+                padding: 16px;
+            }
+
+            &__body {
+                padding: 0 8px;
+                position: relative;
+                border-radius: 12px;
+                background-color: $bg-dark-light-c0;
+
+                .table {
+                    min-width: 700px;
+                    border-collapse: separate;
+                    border-spacing: 0 8px;
+
+                    &__body {
+                        .table__row {
+                            border-radius: 16px;
+
+                            &-cell {
+                                white-space: nowrap;
+
+
+                                .table__cell-item {
+                                    display: flex;
+                                    flex-direction: row;
+                                    align-items: center;
+                                    justify-content: center;
+                                    gap: 16px;
+                                }
+                            }
+
+                            .table__cell-1 {
+                                border-top-left-radius: 10px;
+                                border-bottom-left-radius: 10px;
+                            }
+
+                            .table__cell-2 {
+                                .table__cell-item {
+                                    font-weight: $fw-bold;
+                                }
+                            }
+
+                            .table__cell-3 {
+                                .table__cell-item {
+                                    .item__username {
+                                        max-width: 120px;
+                                        cursor: pointer;
+                                    }
+                                }
+                            }
+
+                            .table__cell-4 {
+                                color: $text-primary-c2;
+                            }
+
+                            .table__cell-5 {
+                                border-top-right-radius: 10px;
+                                border-bottom-right-radius: 10px;
+
+                                .table__cell-item {
+                                    .item__button {
+                                        min-width: 35px;
+
+                                        &-icon {
+                                            width: 18px;
+                                            height: 18px;
+                                        }
+                                    }
+                                }
+                            }
+
+                        }
+
+
+                    }
+                }
+            }
+
+        }
+    }
+
+}

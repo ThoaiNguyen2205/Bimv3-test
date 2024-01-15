@@ -1,0 +1,31 @@
+.blog-personal {
+    &__header {
+        .blog-personal__breadcrumbs {
+            &__button {
+                .blog-button__posts {}
+            }
+        }
+    }
+
+    &__content {}
+
+    &__search {
+        &-form {
+            margin: 30px 0;
+        }
+    }
+}
+
+.dialog-cover {
+    &__img {}
+
+    &__button {
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        width: 30px;
+        height: 30px;
+        color: $text-light-c0;
+        cursor: pointer;
+    }
+}

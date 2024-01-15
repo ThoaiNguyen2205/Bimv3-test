@@ -1,0 +1,223 @@
+.comments {
+    &__head {
+        margin: 30px 30px 30px 0;
+
+        &-title {}
+
+        &-total {
+            color: $text-disable;
+        }
+    }
+
+    &__form {
+
+
+        &-button {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-top: 16px;
+
+            .button__submit {
+                @media screen and (max-width:576px) {
+                    @include button-small();
+                }
+            }
+
+            .text-error {
+                margin-left: 8px;
+                color: $error-main;
+                font-size: $fs-2 !important;
+            }
+        }
+    }
+
+
+
+
+
+    &__list {
+        margin-top: 30px;
+
+        &-item {
+            .comments__item {
+                display: flex;
+                align-items: flex-start;
+                flex-direction: column;
+
+                &-author {
+                    display: flex;
+                    align-items: flex-start;
+
+                    .item__avatar {
+                        width: 40px;
+                        height: 40px;
+                        margin-right: 16px;
+                        margin-top: 8px;
+                    }
+
+                    .item__body {
+                        .body-show {
+                            &__info {
+                                display: flex;
+                                justify-content: flex-start;
+                                align-items: center;
+                                margin-bottom: 8px;
+
+                                &-createdBy {
+                                    margin-right: 10px;
+                                }
+
+                                &-createdAt {
+                                    color: $text-disable;
+                                }
+                            }
+
+                            &__content {
+                                display: flex;
+                                justify-content: space-between;
+                                align-items: flex-start;
+
+                                &:hover .body-show__content-popup {
+                                    opacity: 1;
+                                }
+
+                                &-text {
+                                    padding: 12px 16px;
+                                    border-radius: 8px;
+                                    background-color: $bg-dark-light-c0;
+                                    overflow: hidden;
+                                    width: 100%;
+
+                                    .post-body__markdown {
+                                        width: 50%;
+                                        margin: 16px auto;
+
+                                        &-img {
+                                            border-radius: 5px;
+                                            margin: 16px auto;
+
+                                        }
+                                    }
+
+                                    .markdown__link {
+                                        margin: auto;
+                                    }
+
+                                    figure {
+                                        margin-inline-start: 0px;
+                                        margin-inline-end: 0px;
+                                    }
+
+
+                                    p {
+                                        margin-bottom: 0;
+                                    }
+                                }
+
+
+
+                                &-popup {
+                                    opacity: 0;
+                                    margin-left: 8px;
+                                    transition: all .5s;
+                                    color: inherit;
+
+                                    .content__popup-icon {
+                                        width: 16px;
+                                        height: 16px;
+                                    }
+
+                                    &:hover {
+                                        background-color: $bg-dark-light-c0;
+
+                                    }
+                                }
+
+
+
+
+
+                            }
+                        }
+
+                        .item__action {
+                            margin-top: 8px;
+                            width: 100%;
+                            margin-left: 8px;
+
+                            &-button {
+                                margin-bottom: 8px;
+
+                                .button__reply {
+                                    margin-left: -10px;
+                                }
+
+
+                            }
+
+
+
+                            .button__show-reply {}
+                        }
+
+
+                    }
+                }
+
+                &-hidden {
+                    width: 100%;
+                    padding-left: 56px;
+
+                    .comments__item-reply {
+                        width: 100%;
+
+                        // margin-bottom: 24px;
+                        // margin-left: 64px;
+                        .item-reply__button {
+                            display: flex;
+                            justify-content: flex-end;
+                            // margin-right: 24px;
+                            margin-top: 8px;
+
+                            &-cancel {
+                                margin-right: 10px;
+
+
+                            }
+
+                            &-reply {}
+
+                            &-edit {}
+
+                            .reply__button {
+
+
+                                @media screen and (max-width:576px) {
+                                    @include button-small()
+                                }
+                            }
+                        }
+                    }
+
+                    .button__show-reply {}
+                }
+            }
+
+            .comments__list-reply {
+                .reply__list-item {
+                    margin-left: 64px;
+                }
+
+                .comments__pagination {
+                    &-box {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        margin-left: 64px;
+                    }
+                }
+            }
+        }
+    }
+}

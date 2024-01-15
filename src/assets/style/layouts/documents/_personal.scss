@@ -1,0 +1,191 @@
+.documents-personal {
+    &__breadcrumsbs {
+        &-action {
+            .breadcrumbs-button {
+                margin-left: 16px;
+
+                @media screen and (max-width:576px) {
+                    @include button-small()
+                }
+
+
+            }
+        }
+    }
+
+
+    &__search {
+        &-form {
+            margin-top: 50px;
+            margin-bottom: 20px;
+        }
+
+
+    }
+
+    &__content {
+        &-tabs {
+            width: 100%;
+
+            .documents-tabs__context {
+                border-bottom: $border-card-c0;
+            }
+
+            .tab-panel {
+                padding: 24px 0;
+
+                .box-table {
+                    background-color: $bg-dark-light-c0;
+                    position: relative;
+                    padding: 0 8px;
+                    border-radius: 12px;
+
+                    &__container {
+                        .table {
+                            border-collapse: separate;
+                            border-spacing: 0 8px;
+                            box-shadow: $boxShadow-card-c0;
+
+                            &__header {
+                                &-row {
+                                    .table__header-cell {
+                                        text-align: center;
+                                    }
+                                }
+                            }
+
+                            &__body {
+                                .item__table-row {
+                                    border-radius: 16px;
+
+                                    .table__cell {
+                                        @media screen and (max-width:576px) {
+                                            padding: 0px;
+                                        }
+
+                                        text-align: center;
+
+                                        &-cover {
+                                            cursor: pointer;
+                                        }
+
+                                        &-title {
+                                            color: inherit;
+
+
+                                            &:hover {
+                                                color: $title-hover-c0
+                                            }
+                                        }
+
+                                        &-category {
+                                            width: 90%;
+                                            margin: 0 auto;
+
+                                            .category__avatar {
+                                                @media screen and (max-width:768px) {
+                                                    width: 32px;
+                                                    height: 32px;
+                                                }
+
+                                                @media screen and (max-width:576px) {
+                                                    width: 26px;
+                                                    height: 26px;
+                                                }
+                                            }
+                                        }
+
+                                        &-settings {
+                                            display: flex;
+                                            flex-direction: row;
+                                            justify-content: center;
+
+                                            @media screen and (max-width:576px) {
+                                                flex-direction: column;
+                                            }
+
+                                            .table__cell-label {
+                                                margin: 0 5px;
+
+                                                @media screen and (max-width:576px) {
+                                                    margin: 2px 0;
+                                                    padding: 0;
+                                                }
+
+                                            }
+                                        }
+
+                                        &-createdAt {
+                                            font-size: $fs-2;
+                                            color: $text-primary-c1;
+
+                                            @media screen and (max-width:576px) {
+                                                font-size: $fs-1;
+                                            }
+
+                                        }
+
+                                        &-item {
+                                            font-size: $fs-2;
+                                            flex-direction: row;
+                                            display: flex;
+                                            align-items: center;
+                                            justify-content: center;
+
+                                            .table-cell__item-icon {
+                                                margin-right: 8px;
+                                                width: 16px;
+                                                height: 16px;
+                                            }
+                                        }
+
+
+
+                                        .table__cell-view {}
+
+                                        .table__cell-favorite {}
+
+                                        .table__cell-shares {
+                                            .item__avatar {
+                                                width: 28px;
+                                                height: 28px;
+                                            }
+                                        }
+
+                                        .table__cell-action {}
+                                    }
+
+                                    .table__cell-1 {
+                                        white-space: nowrap;
+                                        border-top-left-radius: 10px;
+                                        border-bottom-left-radius: 10px;
+                                        padding: 8px;
+
+
+
+                                    }
+
+                                    .table__cell-4 {
+                                        .table__cell-label {
+                                            @media screen and (max-width:576px) {
+                                                font-size: $fs-0;
+                                            }
+                                        }
+                                    }
+
+                                    .table__cell-9 {
+                                        border-top-right-radius: 10px;
+                                        border-bottom-right-radius: 10px;
+                                        padding: 0 5px 0 0;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .tab-panel-1 {}
+        }
+    }
+}

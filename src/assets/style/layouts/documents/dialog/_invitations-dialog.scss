@@ -1,0 +1,114 @@
+.invitations-dialog {
+    &__title {}
+
+    &__content {
+
+
+        .content__input {
+            display: flex;
+            flex-direction: row;
+            gap: 8px;
+            margin-bottom: 8px;
+        }
+
+        .content__settings {
+            display: flex;
+            flex-direction: row;
+            gap: 16px;
+            margin-bottom: 24px;
+
+            &-comment {
+                width: 100%;
+                margin: 0;
+
+            }
+
+            &-edit {
+                width: 100%;
+            }
+        }
+
+        .content__submit {
+            margin-bottom: 24px;
+            display: flex;
+            flex-direction: row;
+
+            gap: 8px;
+
+            &-flexGrow {
+                flex-grow: 1;
+            }
+
+            &-button {
+                min-width: 140px;
+            }
+        }
+
+        .content__scrollbar {
+            max-height: 60px*6;
+
+            &-list {
+                .invitations__item {
+                    flex-grow: 1;
+                    padding: 0 8px 8px;
+                    border-radius: 8px;
+                    border: $border-success-c0;
+                    margin-bottom: 8px;
+
+                    &-avatar {
+                        .avatar_icon {
+                            margin-bottom: 0;
+                            height: 62px;
+                        }
+                    }
+
+                    &-text {
+                        display: inline-flex;
+                        flex-direction: column;
+
+                        .item-text {
+                            &__email {}
+
+                            &__settings {
+                                display: flex;
+                                align-items: left;
+                                flex-direction: row;
+                                margin-top: 8px;
+
+                                &-label {
+                                    z-index: 10;
+                                    margin-right: 16px;
+                                }
+                            }
+                        }
+
+                    }
+
+                    &-button {
+                        flex-shrink: 0;
+                        text-transform: unset;
+                        font-weight: $fw-semibold;
+                        align-items: right;
+
+                        .button-icon {
+                                margin-right: 8px;
+                            }
+                    }
+
+
+                }
+            }
+        }
+    }
+
+    &__action {
+        display: flex;
+        justify-content: space-between;
+
+        &-button {
+            flex-grow: 1;
+
+            .button__close {}
+        }
+    }
+}

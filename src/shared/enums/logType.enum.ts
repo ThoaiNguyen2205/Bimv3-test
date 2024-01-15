@@ -1,0 +1,22 @@
+export enum LogType {
+    User = 'User',
+    Invitation = 'Invitation',
+    Group = 'Group',
+    Properties = 'Properties',
+    Project = 'Project',
+    Folder = 'Folder',
+    File = "File",
+    Task = "Task",
+    GeneralDiscussion = "GeneralDiscussion",
+    FileRequestCloud = "FileRequestCloud",
+    Collaboration = 'Collaboration',
+    ModelCollaboration = 'ModelCollaboration',
+    CadCollaboration = 'CadCollaboration',
+    OfficeCollaboration = 'OfficeCollaboration',
+    ImageCollaboration = 'ImageCollaboration',
+    ConstructionProgress = 'ConstructionProgress',
+    PointCloud = "PointCloud",
+    ScheduleReport = "ScheduleReport",
+    Report360 = 'Report360',
+}
+  

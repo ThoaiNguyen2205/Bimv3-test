@@ -1,0 +1,191 @@
+.category-dialog {
+    &__content {
+        overflow: unset;
+
+        .content-grid {
+            &__tabs {
+                &-box {
+                    width: 100%;
+
+                    .tabs-context {
+                        border-bottom: 8px;
+                        // border-color: divider;
+                        width: 94%;
+
+                        &__list {
+                            &-item {}
+                        }
+                    }
+
+                    .tabs-panel {
+                        &__scrollbar {
+                            padding: 16px;
+                            height: 65px*6;
+
+                            .css-8s9lsk {
+                                padding: 12px 8px 12px 0;
+                            }
+
+                            &-list {
+                                flex-grow: 1;
+                                max-width: 800px;
+                                overflow-y: auto;
+
+                                .collapse-icon,
+                                .expand-icon,
+                                .end-icon {
+                                    width: 24px;
+                                }
+
+                            }
+                        }
+                    }
+
+                    .tabs-panel-2 {
+                        &__scrollbar {
+                            height: 70px*6;
+                            background-color: $bg-light-c3;
+                            border: $border-card-c0;
+                            border-radius: 12px;
+                            padding: 16px;
+
+                            &-list {
+                                .category-item {
+                                    background-color: transparent;
+                                    flex-grow: 1;
+                                    padding: 8px 16px;
+                                    border-radius: 8px;
+                                    border: $border-success-c0 ;
+                                    margin-bottom: 8px;
+
+                                    &__avatar {
+                                        width: 40px;
+                                        height: 40px;
+                                    }
+
+                                    &__text {
+                                        margin-left: 16px;
+                                    }
+
+                                    &__button {
+                                        flex-shrink: 0;
+                                        text-transform: unset;
+                                    }
+                                }
+
+                                .category-item__selected {
+                                    background-color: $bg-success-c0;
+                                }
+                            }
+                        }
+                    }
+
+                    .tabs-footer {
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+                        align-items: center;
+                        width: 90%;
+                        margin: auto;
+
+                        &__text {
+                            color: $text-dark-c2;
+                            text-align: center;
+                        }
+
+                        &__button {}
+                    }
+                }
+            }
+
+            &__form {
+                padding: 16px;
+                text-align: left;
+
+                .form__upload {
+                    margin-bottom: 8px;
+                    margin-top: 48px;
+
+                    &-note {
+                        margin-top: 16px;
+                        display: block;
+                        text-align: center;
+                        color: $text-dark-c2;
+                    }
+
+                }
+
+                .form__title {
+                    margin-top: 16px;
+                    margin-bottom: 8px;
+
+                    &-color {
+                        .color-selected {
+                            width: 44px;
+                            height: 100%;
+                            border: none;
+                            border-radius: 7px;
+                            display: inline-block;
+                            cursor: pointer;
+
+
+                        }
+
+                        .color-dialog {
+                            position: absolute;
+                            z-index: 2;
+
+                            &__close {
+                                position: fixed;
+                                top: 0;
+                                left: 0;
+                                right: 0;
+                                bottom: 0;
+                            }
+
+                            &__item {}
+                        }
+                    }
+
+                    &-input {}
+
+                }
+
+                .form__description {
+                    margin-top: 20px;
+
+                    &-icon {}
+                }
+
+                .form__button {
+                    display: flex;
+                    flex-direction: row;
+                    margin: 16px 0;
+
+                    .button-small {
+                        @media screen and (max-width:576px) {
+                            @include button-small()
+                        }
+
+
+                    }
+
+                    &-cancel {
+                        min-width: 100px
+                    }
+
+                    &-flex-grow {
+                        flex-grow: 1;
+                    }
+
+                    &-close {}
+
+                    &-submit {
+                        min-width: 140px;
+                        margin-left: 8px;
+                    }
+                }
+            }
+        }
+    }
+}

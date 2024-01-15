@@ -1,0 +1,227 @@
+.blog-detail {
+    &__container {
+        .blog-detail__breadcrumbs {}
+
+        .blog-detail__content {
+            margin-top: 0px;
+
+            .blog-detail__post {
+                &-content {
+                    border-radius: 16px;
+                    box-shadow: $boxShadow-card-c0;
+
+                    .post-cover {
+                        &__box {
+                            overflow: hidden;
+                            position: relative;
+                            border-radius: 16px 16px 0 0;
+                            max-height: 40vh;
+
+                            &-header {
+                                top: 0;
+                                z-index: 10;
+                                width: 100%;
+                                position: absolute;
+                                padding: 24px;
+                                color: $text-light-c0;
+                                text-align: center;
+
+                                .header__cover-title {}
+
+                                .header__cover-category {}
+                            }
+
+                            &-footer {
+                                bottom: 0;
+                                z-index: 10;
+                                display: flex;
+                                width: 100%;
+                                position: absolute;
+                                align-items: flex-end;
+                                justify-content: space-between;
+                                padding-left: 24px;
+                                padding-right: 16px;
+                                padding-bottom: 24px;
+
+                                .footer-author {
+                                    display: flex;
+                                    align-items: center;
+
+                                    &__avatar {
+                                        width: 35px;
+                                        height: 35px;
+                                    }
+
+                                    &__text {
+                                        margin-left: 16px;
+
+                                        &-name {
+                                            color: $text-light-c0;
+                                        }
+
+                                        &-createAt {
+                                            color: $text-disable;
+                                        }
+                                    }
+
+
+                                }
+
+                                .footer-share {
+                                    .cover__share-item {
+                                        width: 35px;
+                                        height: 35px;
+                                    }
+                                }
+                            }
+
+
+                            &-overlay {
+                                top: 0;
+                                right: 0;
+                                bottom: 0;
+                                left: 0;
+                                z-index: 9;
+                                position: absolute;
+                                background-color: $bg-overlay-c1;
+                            }
+
+                            &-image {
+                                width: 100%;
+                                height: 100%;
+                                object-fit: cover;
+                            }
+
+                        }
+                    }
+
+                    .post-body {
+                        overflow: hidden;
+                        width: 95%;
+                        margin: 50px auto;
+
+
+                        &__markdown {
+                            width: 80%;
+                            margin: auto;
+
+                            &-img {
+                                border-radius: 5px;
+                                margin: 16px 0;
+                                width: 80%;
+                            }
+                        }
+
+                        .markdown__link {
+                            margin: auto;
+                        }
+
+                        figure {
+                            margin-inline-start: 0px;
+                            margin-inline-end: 0px;
+                        }
+                    }
+
+                }
+            }
+
+
+            .blog-detail__related {
+                .related-box {
+                    &__header {}
+
+                    &__content {
+                        &-list {}
+
+                        .related__list-grid {}
+
+                        .carousel__center {
+                            .carousel__container {
+                                overflow: hidden;
+                                position: relative;
+
+                                &-content {
+                                    .carousel__list {
+                                        padding: 0 8px;
+
+                                        &-link {
+                                            &:hover .item__card-image {
+                                                transform: scale(1.1);
+                                                transition: all 1s;
+                                            }
+
+                                            .item__card {
+                                                border-radius: 16px;
+                                                overflow: hidden;
+                                                position: relative;
+
+                                                &-image {
+                                                    width: 100%;
+                                                    height: 100%;
+                                                    aspect-ratio: 3/4;
+                                                    transition: all 1s;
+                                                    object-fit: cover;
+                                                }
+
+                                                &-content {
+                                                    bottom: 0;
+                                                    z-index: 9;
+                                                    width: 100%;
+                                                    text-align: left;
+                                                    position: absolute;
+                                                    color: $text-light-c0;
+                                                    background-image: $linear-gradient-c0;
+                                                    padding-bottom: 12px;
+
+                                                    .item__card-title {
+                                                        &:hover {
+                                                            color: $title-hover-c2;
+                                                        }
+                                                    }
+
+                                                    .item__card-author {
+                                                        display: flex;
+                                                        align-items: center;
+
+                                                        .card__author-avatar {
+                                                            margin-right: 16px;
+                                                            width: 32px;
+                                                            height: 32px;
+                                                        }
+
+                                                        .card__author-text {
+                                                            .card__author-name {}
+
+                                                            .card__author-createAt {
+                                                                color: $text-disable;
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .blog-detail__loading {
+      min-height: 500px;
+      display: flex;
+      align-items: center;
+    }
+}
+
+.markdown__box {
+    width: 100%;
+
+    .markdown__img {
+        width: 100%;
+    }
+}

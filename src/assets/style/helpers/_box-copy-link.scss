@@ -1,0 +1,38 @@
+.share-dialog {
+    &__title {}
+
+    &__content {
+        overflow: unset !important;
+
+
+
+        &-link {
+            margin-top: 16px;
+
+            .button__copy {
+                @media screen and (max-width:576px) {
+                    @include button-small()
+                }
+
+                &-icon {
+                    width: 18px;
+                }
+            }
+
+
+        }
+
+        &-action {
+            display: flex !important;
+            justify-content: flex-end;
+            flex-direction: row !important;
+            margin: 24px 0;
+
+            .share__action-close {
+                @media screen and (max-width:576px) {
+                    @include button-small()
+                }
+            }
+        }
+    }
+}

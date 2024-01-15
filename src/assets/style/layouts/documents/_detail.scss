@@ -1,0 +1,125 @@
+.document-detail {
+    &__container {
+        @media screen and (max-width:1450px) {
+            padding-left: 8px;
+            padding-right: 8px;
+        }
+
+        .document-detail__breadcrumbs {}
+
+        .document-detail__grid {
+            padding-top: 30px;
+
+            &-item {}
+
+            &-index {
+                .item-card-fixed {
+                    position: fixed;
+                    width: 100%;
+                    left: 0;
+                    top: 64px;
+                    z-index: 100;
+                    background-color: $title-hover-c1;
+                    padding: 16px 30px;
+
+                }
+
+                .item-card {
+                    padding: 24px;
+                    position: sticky;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+
+
+
+                    &__scrollbar {
+                        height: 70vh;
+                        width: 100%;
+                        margin-top: 8px;
+                        padding: 0 16px;
+
+                        @media screen and (max-width:768px) {
+                            height: 54px*4
+                        }
+
+                        &-treeview {
+                            flex-grow: 1;
+                            max-width: 800px;
+                            overflow-y: auto;
+                        }
+                    }
+                }
+            }
+
+            &-content {
+                .item-card {
+                    min-height: 90vh;
+
+                    &__loading {
+                        margin-top: 20%;
+                    }
+
+                    &__note {
+                        margin-top: 20px;
+                        margin-left: 50px;
+
+                        &-version {
+                            display: flex;
+                            gap: 8px;
+                            align-items: flex-end;
+                            margin-bottom: 8px;
+                        }
+
+                        &-createdAt {
+                            font-size: $fs-2;
+                            color: $text-disable;
+                        }
+
+
+                    }
+
+                    &__markdown {
+                        overflow: hidden;
+                        width: 95%;
+                        margin: 50px auto;
+
+
+                        .post-body__markdown {
+                            width: 80%;
+                            margin: auto;
+
+                            &-img {
+                                border-radius: 5px;
+                                margin: 16px 0;
+                                width: 80%;
+                            }
+                        }
+
+                        .markdown__link {
+                            margin: auto;
+                        }
+
+                        figure {
+                            margin-inline-start: 0px;
+                            margin-inline-end: 0px;
+                        }
+                    }
+
+                    &__comment {
+                        padding: 48px;
+                        margin-bottom: 100px;
+                    }
+                }
+
+
+
+
+            }
+        }
+    }
+
+
+
+
+}

@@ -1,0 +1,86 @@
+.blog-create {
+    width: 90%;
+    margin: 40px auto;
+
+    @media screen and (max-width:768px) {
+        width: 100%;
+    }
+
+    &__container {
+        .blog-create__form {
+            &-card {
+                padding: 24px;
+
+                .create-card__cover {
+                    &-sub {
+                        color: $text-disable;
+                    }
+
+                    &-caption {
+                        margin-top: 8px;
+                        margin: 0 auto;
+                        display: block;
+                        text-align: center;
+                        color: $text-disable;
+                    }
+                }
+
+                .create-card__content {
+                    &-category {
+                        display: flex;
+                        justify-content: space-between;
+                        margin-top: 20px;
+
+                        .category__menu-item {
+                            margin: 0 8px;
+                            border-radius: 10px;
+                            font-size: 10px;
+                            text-transform: capitalize;
+
+                        }
+
+                    }
+
+                    &-title {}
+
+                    &-description {}
+
+                    &-editor {
+                        .editor__sub {
+                            color: $text-disable;
+                        }
+
+                        .editor__form {}
+                    }
+
+                    &-switch {
+                        padding: 16px;
+
+                        .switch__box {
+                            display: flex;
+                            justify-content: space-around;
+
+                            .switch__publish {}
+
+                            .switch__comments {}
+                        }
+
+                    }
+
+                    &-button {
+                        margin-top: 24px;
+                        display: flex;
+                        justify-content: flex-end;
+
+                        .create-button {
+                            @media screen and (max-width:576px) {
+                                @include button-small()
+                            }
+                        }
+
+                    }
+                }
+            }
+        }
+    }
+}

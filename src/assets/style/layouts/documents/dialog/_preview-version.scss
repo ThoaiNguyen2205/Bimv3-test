@@ -1,0 +1,98 @@
+.preview-dialog {
+    &__action {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 100;
+        background-color: inherit;
+        border-bottom: 1px solid gray;
+
+        &-title {
+            flex-grow: 1;
+        }
+
+        &-cancel {}
+
+        &-restore {}
+
+
+    }
+
+
+
+    &__content {
+
+
+        &-scrollbar {
+            width: 50%;
+            margin: 100px auto;
+            border: $border-c0;
+            border-radius: 10px;
+
+            @media screen and (max-width:1450px) {
+                width: 70%;
+            }
+        }
+
+        &-title {
+            .preview-index {
+                border-radius: 10px 10px 0 0;
+                background-color: $bg-dark-c2;
+
+
+                &__container {
+                    padding: 16px;
+
+                    &-title {
+                        border-radius: 10px;
+                        color: $text-light-c0;
+                    }
+                }
+            }
+        }
+
+        &-body {
+            margin-top: 24px;
+            margin-bottom: 50px;
+
+            .body__version {
+                margin-bottom: 8px;
+
+                &-label {
+                    margin-left: 8px;
+                }
+            }
+
+            .body__createdAt {
+                color: $text-disable;
+            }
+
+            .body__markdown {
+                margin-top: 24px;
+
+                &-box {
+                    .markdown__container-img {
+                        width: 80%;
+                        margin: auto;
+
+                        .markdown__img {
+                            border-radius: 5px;
+                            margin: 16px 0;
+                            width: 80%;
+                        }
+                    }
+
+                    .markdown__link {
+                        margin: auto;
+                    }
+
+                    figure {
+                        margin-inline-start: 0px;
+                        margin-inline-end: 0px;
+                    }
+                }
+            }
+        }
+    }
+}

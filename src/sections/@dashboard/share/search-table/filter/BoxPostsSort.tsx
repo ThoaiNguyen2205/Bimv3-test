@@ -1,0 +1,38 @@
+// @mui
+import { MenuItem, TextField } from '@mui/material';
+
+// ----------------------------------------------------------------------
+
+type Props = {
+  sortBy: string;
+  sortOptions: { value: string; label: string }[];
+  onSort: (event: React.ChangeEvent<HTMLInputElement>) => void;
+};
+
+export default function BoxPostsSort({ sortOptions, sortBy, onSort }: Props) {
+  return (
+    <TextField
+      className="sort__form"
+      select
+      size="small"
+      value={sortBy}
+      onChange={onSort}
+      SelectProps={{
+        sx: { typography: 'body2' }
+      }}>
+      {sortOptions.map((option) => (
+        <MenuItem
+          className="sort__form-item"
+          key={option.value}
+          value={option.value}
+          sx={{
+            mx: 1,
+            borderRadius: 0.75,
+            typography: 'body2'
+          }}>
+          {option.label}
+        </MenuItem>
+      ))}
+    </TextField>
+  );
+}

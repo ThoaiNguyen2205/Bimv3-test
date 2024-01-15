@@ -1,0 +1,46 @@
+.calendar-toolbar {
+    padding: 20px;
+    padding-right: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row !important;
+
+    &__button-view {
+        color: inherit;
+        background-color: $bg-light-c2;
+
+        .button-view__start-icon {}
+
+        .button-view__end-icon {
+            margin-left: -4px;
+        }
+    }
+
+    &__date {
+        display: flex;
+        align-items: center;
+        flex-direction: row !important;
+        gap: 8px;
+
+        &-prev {}
+
+        &-text {}
+
+        &-next {}
+    }
+
+    &__action {
+        display: flex;
+        flex-direction: row !important;
+        align-items: center;
+        gap: 8px;
+
+        &-button {}
+
+        &-filter {
+            .filter__buton {}
+        }
+    }
+
+}

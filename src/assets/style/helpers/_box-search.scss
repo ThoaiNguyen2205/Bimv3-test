@@ -1,0 +1,96 @@
+.search-form {
+    &__content {
+        display: flex !important;
+        flex-direction: row !important;
+        align-items: center;
+        justify-content: flex-start;
+
+        @media screen and (max-width:768px) {
+            flex-direction: column !important;
+            width: 100%;
+        }
+
+        .search-form__sort-item {
+            width: 200px;
+            margin-right: 10px;
+
+            @media screen and (max-width:768px) {
+                width: 100%;
+                margin-bottom: 10px;
+
+            }
+
+            .sort__form {
+                width: 100%;
+            }
+        }
+
+        .search-form__sort-status {
+            width: 200px;
+            margin-right: 10px;
+
+            @media screen and (max-width:768px) {
+                width: 100%;
+                margin-bottom: 10px;
+            }
+
+            .search-form__status-label {}
+
+            .search-form__status-select {
+                .status__select-item {
+                    padding: 0;
+                    text-transform: capitalize;
+                    border-radius: 6px;
+                    margin: 0 8px;
+                }
+
+            }
+        }
+
+        .search-form__key {
+            width: 250px;
+            margin-right: 10px;
+
+            @media screen and (max-width:768px) {
+                margin-bottom: 10px;
+                width: 100%;
+            }
+
+            &-icon {
+                color: $text-disable;
+            }
+        }
+
+        .search-form__calendar {
+            margin-right: 10px;
+            text-transform: unset;
+            color: $text-disable;
+            width: auto;
+            justify-content: flex-start;
+            font-weight: $fw-semibold;
+            background-color: transparent;
+
+            @media screen and (max-width:768px) {
+                margin-bottom: 10px;
+                width: 100%;
+            }
+        }
+
+        .form__calendar-active {
+            color: inherit;
+        }
+
+        .search-form__button {}
+
+        .search-form__button {
+            margin-right: 8px;
+            flex-shrink: 0;
+
+            @media screen and (max-width:675px) {
+                @include button-small()
+            }
+        }
+    }
+
+
+}

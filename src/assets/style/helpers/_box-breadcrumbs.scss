@@ -1,0 +1,40 @@
+.breadcrumbs {
+
+    &__action {
+        .breadcrumbs-button {
+            margin: 5px 10px;
+
+            @media screen and (max-width:576px) {
+                @include button-small()
+            }
+        }
+
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end !important;
+
+        &-left {
+            flex-grow: 1;
+
+            .breadcrumbs__content-heading {}
+
+            .breadcrumbs__content-link {
+                .breadcrumbs__separator {
+                    width: 4px;
+                    height: 4px;
+                    border-radius: 50%;
+                    background-color: $bg-disable;
+                }
+            }
+        }
+
+        &-right {
+            .breadcrumbs__content-action {
+                flex-shrink: 0;
+            }
+        }
+    }
+}

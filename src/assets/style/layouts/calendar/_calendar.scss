@@ -1,0 +1,17 @@
+.calendar {
+    &__breadcrumbs {
+        &-action {}
+    }
+
+    &__card {
+        margin-top: 30px;
+
+        &-styled {
+
+
+            .menu-popover {
+                width: 160px;
+            }
+        }
+    }
+}

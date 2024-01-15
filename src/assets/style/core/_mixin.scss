@@ -1,0 +1,4 @@
+@mixin button-small($fs: 12px, $pd: 4px 10px) {
+    font-size: $fs;
+    padding: $pd;
+}
